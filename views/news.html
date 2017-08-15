@@ -1,0 +1,17 @@
+<h1 class="display-4">{{ title }}</h1>
+<p class="card-text"><small class="text-muted">Last updated {{ formatDate lastUpdated }}</small></p>    
+<div class="card-columns">    
+    {{#each articles}}
+    <div class="card">
+        {{#if this.thumbnail}}<img class="card-img-top img-fluid" src="{{ responsiveImage this.thumbnail }}" alt="{{ this.title }}">{{/if}}
+            <div class="card-block">
+                <h4 class="card-title"><a href="{{ this.link }}">{{ this.title }}</a></h4>
+                <small class="text-muted">{{ formatDate this.date }}</small>
+                <blockquote class="card-blockquote">{{ this.summary }}</blockquote>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">{{ this.source }}</small>
+            </div>
+        </div>      
+    {{/each}}
+</div>

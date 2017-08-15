@@ -1,0 +1,7 @@
+{
+  "name": "anchor",
+  "alias": "news-anchor.now.sh",
+  "dotenv": true,
+  "type": "npm"
+}
+
