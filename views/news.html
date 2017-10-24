@@ -7,10 +7,7 @@
             <div class="card-block">
                 <h4 class="card-title"><a href="{{ this.link }}">{{ this.title }}</a></h4>
                 <small class="text-muted">{{ formatDate this.date }}</small>
-                <blockquote class="card-blockquote">{{ this.summary }}</blockquote>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">{{ this.source }}</small>
+                <blockquote class="card-blockquote">{{{ this.summary }}}</blockquote>
             </div>
         </div>      
     {{/each}}

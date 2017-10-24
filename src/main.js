@@ -17,7 +17,7 @@ app.engine('.html', expressHandlebars({
     defaultLayout: 'main',
     helpers: {
         formatDate: date => moment(date).calendar(),
-        responsiveImage: url => `https://responsiveimages.io/v1/images/${encodeURIComponent(url)}`
+        responsiveImage: url => `https://responsiveimages.io/v1/images/${encodeURIComponent(url)}?height=720&width=1280`
     }
 }))
 app.set('view engine', '.html')
